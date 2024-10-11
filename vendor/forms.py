@@ -1,5 +1,5 @@
 from django import forms
-from .models import Vendor, OpeningHour
+from .models import Vendor
 
 
 
