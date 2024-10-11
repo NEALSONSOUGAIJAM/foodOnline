@@ -48,12 +48,12 @@ class UserManager(BaseUserManager):
 #it contain fielname
 
 class User(AbstractBaseUser):
-    RESTUARANT = 1
+    VENDOR = 1
     CUSTOMER = 2
 
     ROLE_CHOICE=(
-        (RESTUARANT,'RESTUARANT'),
-        (CUSTOMER,'CUSTOMER'),
+        (VENDOR, 'Vendor'),
+        (CUSTOMER, 'Customer'),
     )
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
